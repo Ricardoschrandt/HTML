@@ -2,6 +2,73 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: red;
+div#wrapper, footer{
+    margin: auto;
+    width: 1000px;
+    background-color:rgb(59, 69, 226   ) ;
+    padding: 20px;
+
 }
+
+body {
+    font-family: SansSerif;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+section.appel, section.visuals {
+    width: 50%;
+    float: left;
+}
+
+section.visuals{
+    text-align: right;
+}
+
+img.appel{
+    width: 490px;
+}
+
+img.visual{
+    width: 450px;
+    margin-bottom: 8px;
+}
+
+section.artikelen {
+
+}
+article{
+    display: inline-block;
+    width: 300px;
+    padding-right: 60px;
+    vertical-align: top;
+}
+article:last-child{
+    float: right;
+}
+
+img.football{
+    width: 225px;
+}
+
+img.meisje{
+    width: 225px;
+}
+
+footer{
+    background-color:rgb(161, 157, 157 );
+
+}
+
+footer a{
+    color: black;
+}
+
+
