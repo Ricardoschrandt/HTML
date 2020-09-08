@@ -10,11 +10,49 @@ div#wrapper, footer{
 
 }
 
+img#logo{
+    text-align: center;
+    background-color: rgb(192,240,223);
+}
+
 body {
-    font-family: SansSerif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(250,241,234);
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    background-color: rgb(190, 236, 220);
+    text-align: center;
 }
 
 nav {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+li{
+    background-color: rgb(128,128,128);
+    padding: 10px;
+    padding-left: 20px;
+    border-top: 1px solid white;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700px;
+}
+
+h3{
+    color: rgb(220,106,94);
+    font-size: 25px;
+    font-weight: 600;
 }
