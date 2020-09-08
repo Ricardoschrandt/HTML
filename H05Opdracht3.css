@@ -10,9 +10,12 @@ div#wrapper, footer{
 
 }
 
-img#logo{
-    text-align: center;
-    background-color: rgb(192,240,223);
+img.logo{
+    width: 320px;
+}
+
+img{
+    width: 100%;
 }
 
 body {
@@ -35,24 +38,87 @@ nav {
 ul{
     padding: 0px;
     margin: 0px;
-
 }
 
-li{
+li {
     background-color: rgb(128,128,128);
-    padding: 10px;
-    padding-left: 20px;
-    border-top: 1px solid white;
+    padding:10px;
+    padding-left:20px;
+    border-top:1px solid white;
 }
 
 li a {
     color: white;
     text-decoration: none;
-    font-weight: 700px;
+    font-weight: 600px;
 }
 
 h3{
     color: rgb(220,106,94);
-    font-size: 25px;
     font-weight: 600;
+    font-size: 22px;
+
+}
+
+section, footer{
+
+    padding: 20px;
+}
+
+footer{
+    background-color: rgb(128,128,128);
+    color: white;
+    clear: both;
+}
+
+footer h3 {
+    color: white;
+}
+
+@media all and (min-width: 920px){
+    section.nieuws {
+        width: 30%;
+        float: left;
+    }
+    section.Instrumenten {
+        width: 70%;
+        float: right;
+    }
+
+    article{
+        display: inline-block;
+        width: 48%;
+        margin-right: 20px;
+    }
+    article:nth-child(even){
+        margin-right: 0px;
+
+    }
+}
+
+footer h3 {
+    color: white;
+}
+
+@media all and (min-width: 550px) {
+
+    ul{
+        background-color:rgb(128,128,128);
+        border-top: 1px solid white;
+    }
+        li{
+        display: inline-block;
+        border: none;
+    }
+    
+}
+
+@media all and (min-width:1200px) {
+    div#wrapper{
+        width: 1200px;
+        margin: auto;
+    }
+
+
+
 }
