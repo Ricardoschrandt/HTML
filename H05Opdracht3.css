@@ -13,12 +13,6 @@ img{
     width: 100%;
 }
 
-img#logo{
-    height: 50px;
-    width: 50px;
-
-}
-
 body {
     margin: 0px;
     padding: 0px;
@@ -29,7 +23,40 @@ body {
 header{
     background-color: rgb(190, 236, 220);
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+header img{
+    width: 100%;
+    padding-top: 10%;
+    background:contain;
+}
+
+/* oud
+header div img {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen screen and (max-width: 1200px){
+    header div{
+        margin: 0;
+    }
+
+    header{
+        padding: 0;
+    }
+}
+*/
 
 nav {
     margin-top: 20px;
@@ -92,12 +119,7 @@ footer h3 {
         border: none;
     }
 
-    header#logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-    }
+
     
 }
 
@@ -121,12 +143,7 @@ footer h3 {
 
     }
 
-    header#logo {
-        display: block;
-        width: 920px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 }
 
 @media all and (min-width:1200px) {
@@ -136,12 +153,6 @@ footer h3 {
         margin: auto;
     }
 
-    header#logo {
-        display: block;
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
 
 
