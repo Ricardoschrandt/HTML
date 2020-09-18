@@ -10,7 +10,9 @@ div#wrapper, footer{
 }
 
 img{
-    width: 100%;
+    padding: 0;
+    height: auto;
+    margin: 0;
 }
 
 body {
@@ -22,14 +24,16 @@ body {
 
 header{
     background-color: rgb(190, 236, 220);
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
 }
 
 header img{
-    width: 100%;
-    padding-top: 10%;
+    padding: 0;
+    height: auto;
+    margin: 0;
     background:contain;
 }
 
