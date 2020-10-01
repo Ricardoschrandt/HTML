@@ -2,69 +2,32 @@
     box-sizing: border-box;
 }
 
-div#wrapper, footer{
-    margin: auto;
-    width: 1000px;
-    background-color:rgb(245,245,220 ) ;
-    padding: 20px;
-}
+body{
 
-img{
-    padding: 0;
-    height: auto;
-    margin: 0;
-}
-
-body {
+    font-family: 'Raleway', sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(250,241,234);
-    font-family: 'Raleway', sans-serif;
+}
+
+div#wrapper{
+    background-color:rgb(250,241,234);
 }
 
 header{
     background-color: rgb(190, 236, 220);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
+    text-align: center;
 }
 
-header img{
+img#logo{
     padding: 0;
     height: auto;
     margin: 0;
-    background:contain;
+    width: 320px;
+    text-align: center;
 }
 
-/* oud
-header div img {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 200px;
-    margin: .5vw;
-}
-
-header img{
+img{
     width: 100%;
-    height: auto;
-}
-
-@media screen screen and (max-width: 1200px){
-    header div{
-        margin: 0;
-    }
-
-    header{
-        padding: 0;
-    }
-}
-*/
-
-nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 ul{
@@ -72,59 +35,53 @@ ul{
     margin: 0px;
 }
 
-li {
+li{
     background-color: rgb(128,128,128);
-    padding:10px;
-    padding-left:20px;
-    border-top:1px solid white;
+    padding: 10px;
+    border-top: 1px solid white;
+    padding-left: 20px;
 }
 
 li a {
     color: white;
     text-decoration: none;
-    font-weight: 600px;
+    font-weight: 700;
 }
 
-h3{
-    color: rgb(220,106,94);
-    font-weight: 600;
-    font-size: 22px;
-
-}
-
-section, footer{
-
-    padding: 20px;
-}
-
-footer{
-    background-color: rgb(128,128,128);
-    color: white;
-    clear: both;
-}
-
-footer h3 {
-    color: white;
-}
-
-
-footer h3 {
-    color: white;
-}
-
-@media all and (min-width: 150px) {
-
+@media all and (min-width: 550px){
     ul{
-        background-color:rgb(128,128,128);
+        background-color: rgb(128,128,128);
         border-top: 1px solid white;
     }
-        li{
-        display: inline-block;
+    li{
+       display: inline-block;
         border: none;
     }
 
+}
 
-    
+/* -- einde nav -- */
+
+h3 {
+    color:rgb(220, 106, 94);
+    font-weight: 600;
+    font-size: 22px;
+}
+/* -- sections en footers -- */
+
+section , footer{
+    padding: 20px;
+}
+
+@media all and (min-width: 550px){
+    section.nieuws {
+        width: 40%;
+        float: left;
+    }
+    section.Instrumenten {
+        width: 60%;
+        float: right;
+    }
 }
 
 @media all and (min-width: 920px){
@@ -136,28 +93,31 @@ footer h3 {
         width: 70%;
         float: right;
     }
-
     article{
         display: inline-block;
-        width: 48%;
-        margin-right: 20px;
+        width: 46%;
+        margin-right:20px;
     }
+
     article:nth-child(even){
         margin-right: 0px;
-
     }
-
 
 }
 
-@media all and (min-width:1200px) {
-
+@media all and (min-width: 1200px){
     div#wrapper{
         width: 1200px;
         margin: auto;
     }
+}
 
+footer{
+    background-color: rgb(128,128,128);
+    color: white;
+    clear: both;
+}
 
-
-
+footer h3 {
+    color: white;
 }
