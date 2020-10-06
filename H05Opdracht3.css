@@ -3,14 +3,13 @@
 }
 
 body{
-
     font-family: 'Raleway', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 div#wrapper{
-    background-color:rgb(250,241,234);
+    background-color:red;
 }
 
 header{
@@ -77,10 +76,15 @@ section , footer{
     section.nieuws {
         width: 40%;
         float: left;
+
     }
     section.Instrumenten {
         width: 60%;
         float: right;
+    }
+
+    p{
+        padding: 100px;
     }
 }
 
@@ -97,10 +101,15 @@ section , footer{
         display: inline-block;
         width: 46%;
         margin-right:20px;
+        padding: 0;
     }
 
     article:nth-child(even){
         margin-right: 0px;
+    }
+
+    p{
+        padding: 100px;
     }
 
 }
